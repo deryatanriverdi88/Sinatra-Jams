@@ -1,0 +1,14 @@
+
+<h1>All artists</h1>
+
+
+
+<% @artists.each do |artist| %>
+
+<p style="text-align: center;">
+ <a href="/artist/<%= artist.id %>">
+   <%= artist.name %>
+ </a>
+</p>
+
+<% end %>
